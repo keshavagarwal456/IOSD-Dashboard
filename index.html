@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dashboard.css">
+    <title>IOSD DASHBOARD</title>
+  </head>
+  <body>
+
+    <h1><em>International Organisation Of Software Developers</em></h1>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">IOSD DASHBOARD</a>
+  <input type="text" class="form-control form-control-primary w-100" placeholder="Search...">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Logout</a>
+    </li>
+  </ul>
+
+</nav>
+
+<div class="container-fluid">
+ <div class=row>
+   <div class="col-md-2 bg-light d-none-d-md-block sidebar">
+     <div class="left-sidebar">
+       <ul class="nav flex-column sidebar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">
+      <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+      Members
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+      Events
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="web">
+      <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+      Payments
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+      History
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+      Doubts
+    </a>
+  </li>
+</ul>
+     </div>
+   </div>
+
+</div>
+</div>
+
+
+/*main*/
+
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  <h3>Members</h3>
+  <hr>
+  <div class="table-responsive">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Keshav</td>
+          <td>Agarwal</td>
+          <td>President</td>
+        </tr>
+
+        <tr>
+          <th scope="row">2</th>
+          <td>Pradhyuman</td>
+          <td>Yadav</td>
+          <td>Vice-President</td>
+        </tr>
+
+        <tr>
+          <th scope="row">3</th>
+          <td>Shriniketan</td>
+          <td>Kulkarni</td>
+          <td>General Secretary</td>
+        </tr>
+
+        <tr>
+          <th scope="row">4</th>
+          <td>Pranav</td>
+          <td>Shekhar</td>
+          <td>App Development Head</td>
+        </tr>
+
+        <tr>
+          <th scope="row">5</th>
+          <td>Vivek</td>
+          <td>Bhat</td>
+          <td>HR Head</td>
+        </tr>
+
+        <tr>
+          <th scope="row">6</th>
+          <td>Rupam</td>
+          <td>Mondal</td>
+          <td>Treasurer</td>
+        </tr>
+
+        <tr>
+          <th scope="row">7</th>
+          <td>Tejas</td>
+          <td>Saxena</td>
+          <td>Competitive Coding Head</td>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Events</h3>
+  <hr><div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Event #184382</h5>
+        <p class="card-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+        <a href="#" class="btn btn-primary">Print</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Event #184386</h5>
+        <p class="card-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+        <a href="#" class="btn btn-primary">Print</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Event #184389</h5>
+        <p class="card-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+        <a href="#" class="btn btn-primary">Print</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Event #184391</h5>
+        <p class="card-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+        <a href="#" class="btn btn-primary">Print</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Payments</h3>
+<hr><div class="row">
+  <a href="web/payment.html" class="btn btn-primary payments">PAY</a>
+</div>
+
+
+</main>
+  </body>
+</html>
